@@ -112,7 +112,7 @@ gulp.task('lint', () => {
 
 // WatchFiles For Changes
 gulp.task('watch', () => {
-  gulp.watch(['src/js/*.js','src/index.html'], ['lint', browserSync.reload]);
+  gulp.watch(['src/js/**/*.js','src/index.html'], ['lint','transpile',browserSync.reload]);
 });
 
 // Deploy Source to server
@@ -130,5 +130,5 @@ gulp.task('deploy', () => {
     }));
 });
 
-gulp.task('default', ['dev-server', 'watch']);
+gulp.task('default', ['dist-server', 'watch']);
 
