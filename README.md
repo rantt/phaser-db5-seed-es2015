@@ -1,8 +1,8 @@
-#Phaser-db5-Seed
+#phaser-db5-seed-es2015
 
 This project is an application skeleton for a typical [phaser.js](http://phaser.io) game.  You can use it to quickly test, build and deploy your phaser projects.
 
-Based off of [phaser-bootstrap](https://github.com/rantt/phaser-bootstrap) with the exception of using [Gulp.js](http://gulpjs.com/) instead of [Grunt.js](http://gruntjs.com/).
+Based off of [phaser-db5-seed](https://github.com/rantt/phaser-db5-seed) with support for es2015. 
 
 It includes a basic splash screen, loading bar and instruction panel.
 
