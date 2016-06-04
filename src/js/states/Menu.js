@@ -1,4 +1,4 @@
-class MenuState extends Phaser.State {
+class Menu extends Phaser.State {
   create() {
     let center = {x: this.game.world.centerX, y: this.game.world.centerY};
 
@@ -16,11 +16,11 @@ class MenuState extends Phaser.State {
 
   update() {
     if (this.game.input.activePointer.isDown){
-      this.game.state.start('PlayState');
+      this.game.state.start('Play');
     }
   }
 
 
 }
 
-export default MenuState;
+export default Menu;

@@ -1,19 +1,19 @@
-import BootState from './states/BootState';
-import LoadState from './states/LoadState';
-import MenuState from './states/MenuState';
-import PlayState from './states/PlayState';
+import Boot from './states/Boot';
+import Load from './states/Load';
+import Menu from './states/Menu';
+import Play from './states/Play';
 
 class Game extends Phaser.Game {
   constructor() {
     let width = 800;
     let height = 600;
 
-    super(width, height, Phaser.AUTO, 'game', null);
-    this.state.add('BootState', BootState, false);
-    this.state.add('LoadState', LoadState, false);
-    this.state.add('MenuState', MenuState, false);
-    this.state.add('PlayState', PlayState, false);
-    this.state.start('BootState');
+    super(width, height, Phaser, 'game', null);
+    this.state.add('Boot', Boot, false);
+    this.state.add('Load', Load, false);
+    this.state.add('Menu', Menu, false);
+    this.state.add('Play', Play, false);
+    this.state.start('Boot');
   }
 }
 

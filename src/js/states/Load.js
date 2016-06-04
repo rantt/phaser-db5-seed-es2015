@@ -1,4 +1,4 @@
-class LoadState extends Phaser.State {
+class Load extends Phaser.State {
 
   preload() {
     let center = {x: this.game.world.centerX, y: this.game.world.centerY};
@@ -9,9 +9,9 @@ class LoadState extends Phaser.State {
   }
 
   create() {
-    this.game.state.start('MenuState');
+    this.game.state.start('Menu');
   }
 
 }
 
-export default LoadState;
+export default Load;

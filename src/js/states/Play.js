@@ -1,4 +1,4 @@
-class PlayState extends Phaser.State {
+class Play extends Phaser.State {
   create() {
     this.game.world.setBounds(0, 0, this.game.width, this.game.height);
 
@@ -32,4 +32,4 @@ class PlayState extends Phaser.State {
   }
 }
 
-export default PlayState;
+export default Play;
