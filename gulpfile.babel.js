@@ -48,6 +48,7 @@ gulp.task('init',['get-phaser', 'get-debug']);
 
 gulp.task('get-phaser', () => {
   request('https://raw.github.com/photonstorm/phaser/master/build/phaser.min.js').pipe(fs.createWriteStream('src/js/lib/phaser.min.js'));
+  request('https://raw.github.com/photonstorm/phaser/master/build/phaser.min.js').pipe(fs.createWriteStream('dist/phaser.min.js'));
   request('https://raw.github.com/photonstorm/phaser/master/build/phaser.map').pipe(fs.createWriteStream('src/js/lib/phaser.map'));
 });
 
